@@ -2,7 +2,7 @@ package catppuccingo
 
 type mocha struct{}
 
-var _ Theme = mocha{}
+var _ Theme = (*mocha)(nil)
 
 func (mocha) Name() string { return "mocha" }
 

@@ -45,7 +45,7 @@ func (c Color) RGBA() (r uint32, g uint32, b uint32, a uint32) {
 	return c.RGB[0], c.RGB[1], c.RGB[2], 1
 }
 
-var _ color.Color = Color{}
+var _ color.Color = (*Color)(nil)
 
 // Mocha variant.
 func Mocha() Theme { return mocha{} }

@@ -3,7 +3,7 @@ package catppuccingo
 // latte variant.
 type latte struct{}
 
-var _ Theme = latte{}
+var _ Theme = (*latte)(nil)
 
 func (latte) Name() string { return "latte" }
 

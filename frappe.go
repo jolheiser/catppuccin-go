@@ -3,7 +3,7 @@ package catppuccingo
 // frappe variant.
 type frappe struct{}
 
-var _ Theme = frappe{}
+var _ Theme = (*frappe)(nil)
 
 func (frappe) Name() string { return "frappe" }
 

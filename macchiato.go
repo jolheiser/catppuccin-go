@@ -3,7 +3,7 @@ package catppuccingo
 // macchiato variant.
 type macchiato struct{}
 
-var _ Theme = macchiato{}
+var _ Theme = (*macchiato)(nil)
 
 func (macchiato) Name() string { return "macchiato" }
 
